@@ -1,0 +1,48 @@
+#hms-pos-main-table #pos-field-table {
+    width: 100%;
+	
+}
+#hms-pos-main-table {
+	width:98%;
+}
+#hms-pos-main-table #pos-btn-table {
+	background: #bdd9de/*#bdbaaf/*#cfd3d4 #c1f0e1*/;
+}
+#hms-pos-main-table #hms-pos-detlist-table {
+	width: 99%;
+}
+#table2-top-btn, #reportholder {
+    width: auto;
+}
+.list-collapse-section button{
+	left:0px !important;
+}
+/*#postable button,#pos-btn-table button{
+	width:auto !important;
+	background:none !important;
+}*/
+
+#reportholder{
+	margin-inline: auto;
+	}
+	
+#hms-pos-detlist-table>tbody>tr{
+	vertical-align:top;
+}
+
+#posdetailListTable tbody tr td{
+	padding: 1px 5px 1px 3px !important;
+}
+#posdetailListTable thead {
+	line-height: 6px !important;
+	background: whitesmoke;
+}
+#posdetailListTable tfoot {
+	line-height: 6px !important;
+	background:whitesmoke; /*aliceblue;gainsboro;whitesmoke;*/;
+}
+#postable button, #pos-btn-table button {
+	height: 30px;
+	padding: 0px 5px 5px 5px;
+	font-size: 12px;
+}
