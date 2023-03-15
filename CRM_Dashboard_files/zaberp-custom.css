@@ -1,0 +1,23 @@
+#hms-pos-main-table #pos-field-table {
+    width: 100%;
+	
+}
+#hms-pos-main-table {
+	width:98%;
+}
+#hms-pos-main-table #pos-btn-table {
+	background: #bdd9de/*#bdbaaf/*#cfd3d4 #c1f0e1*/;
+}
+#hms-pos-main-table #hms-pos-detlist-table {
+	width: 99%;
+}
+#table2-top-btn, #reportholder {
+    width: auto;
+}
+#reportholder{
+	margin-inline: auto;
+	}
+	
+#hms-pos-detlist-table>tbody>tr{
+	vertical-align:top;
+}

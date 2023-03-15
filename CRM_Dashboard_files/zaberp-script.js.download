@@ -1,0 +1,63 @@
+
+//*** for opening profile modal ***************//
+////var profileimg = document.getElementById("navprofileimg");
+
+var modal = document.getElementById("profilemodal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+/*
+profileimg.onclick = function() {
+//	alert('b');
+  modal.style.display = "block";
+}
+*/
+//********** Menu searching **************//
+$(document).ready(function(){
+  $("#menuInput").on("keyup", function() {
+	    var value = $(this).val().toLowerCase();
+    $("#menuul li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+   $('.select2').select2();
+});
+
+
+
+function addCommas(nStr)
+{
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
+
+
+function getReport(repname) {
+  window.open("",repname,'toolbar=0,location=0,resizable=yes,scrollbars=yes,width=800,top=0,height=600');
+}
+
+/*********** for confirm delete ***************/
+
+function confirmDelete(){
+	var forms = eval(document.forms);
+	var form = document.forms[0];
+	if (forms.length>1){
+		form=document.forms[forms.length-1]
+	}
+	if(confirm('Are You Confirm')){
+		form.searchbutton.value = "Delete"
+    }else{
+        form.searchbutton.value = "Show"
+    }
+	
+}
+
