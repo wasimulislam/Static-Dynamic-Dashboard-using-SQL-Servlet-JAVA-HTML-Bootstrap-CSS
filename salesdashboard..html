@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>ZAB ERP United Hospital Limited.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link href="./salesdashboard._files/jquery-slide-menu.css" rel="stylesheet" type="text/css">
+<link href="./salesdashboard._files/dtree.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./salesdashboard._files/select2.min.css">
+<link rel="stylesheet" href="./salesdashboard._files/zaberp-bootstrap.min.css">
+<link rel="stylesheet" href="./salesdashboard._files/zaberp-bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="./salesdashboard._files/zaberp.css" title="ZAB ERP">
+<link rel="stylesheet" type="text/css" href="./salesdashboard._files/zaberp-custom.css" title="ZAB ERP">
+<link rel="stylesheet" href="./salesdashboard._files/all.min.css">
+<script language="JavaScript">
+var VALUEseparator = '_VALUE_';
+var product = 'ZAB ERP';
+var softname = '<h1>MediSense</h1>';
+var helpURL = 'helplist';
+var NOACTION = 'javascript:void(0)';
+var DATEformat = 'Day-Month-Year';
+var DATEseparator = '-';
+var DATErange = 'null';
+var servletroot = '/zab';
+var currentModule = '*none*';
+var logged = true;
+var userid = true
+var businessid = true
+var blank = false
+
+
+</script>
+<script language="JavaScript1.2" src="./salesdashboard._files/jquery.min.js.download"></script>
+<script src="./salesdashboard._files/select2.full.min.js.download"></script>
+<script src="./salesdashboard._files/zaberp-bootstrap.min.js.download"></script>
+<script src="./salesdashboard._files/moment.min.js.download"></script>
+<script src="./salesdashboard._files/jquery-ui.min.js.download"></script>
+<link rel="stylesheet" type="text/css" href="./salesdashboard._files/jquery-ui.min.css" title="ZAB ERP">
+<script src="./salesdashboard._files/zaberp-bootstrap-datetimepicker.min.js.download"></script>
+<script src="./salesdashboard._files/zaberp.js.download"></script>
+<script src="./salesdashboard._files/ckeditor.js.download"></script><style>.cke{visibility:hidden;}</style>
+<link rel="stylesheet" type="text/css" href="./salesdashboard._files/datatables.min.css">
+<script type="text/javascript" charset="utf8" src="./salesdashboard._files/datatables.min.js.download"></script>
+<script src="./salesdashboard._files/jquery.jeditable.js.download"></script>
+<script src="./salesdashboard._files/jquery.jeditable.checkbox.js.download"></script>
+<script src="./salesdashboard._files/jquery.jeditable.datepicker.js.download"></script>
+<script src="./salesdashboard._files/jquery.jeditable.time.js.download"></script>
+<script src="./salesdashboard._files/Chart.min.js.download"></script>
+<script src="./salesdashboard._files/utils.js.download"></script>
+<script src="./salesdashboard._files/chartjs-plugin-datalabels.min.js.download"></script>
+<script src="./salesdashboard._files/jquery-slide-menu.js.download"></script>
+<script src="./salesdashboard._files/dtree.js.download"></script>
+<script type="text/javascript" src="./salesdashboard._files/data.js.download"></script><script type="text/javascript" src="./salesdashboard._files/highcharts.js.download"></script><script type="text/javascript" src="./salesdashboard._files/jquery.min.js(1).download"></script><link rel="stylesheet" href="./salesdashboard._files/homestytle.css"><link rel="stylesheet" href="./salesdashboard._files/animate.min.css"><style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+<body leftmargin="0" rightmargin="0" topmargin="0">
+<script>
+</script>
+<div class="nav-slide">
+<div class="btn-slide" title="Main Menu"><i class="fa fa-bars fa-2x"></i></div>
+<div class="input-group mt-1 ml-1 mb-1">
+	<div class="input-group-prepend">
+		<span class="input-group-text"><i class="fa fa-search"></i></span>
+		<input id="menuInput" type="text" placeholder="Search Menu...">
+	</div>
+</div>
+<div class="dTree">
+<ul id="menuul">
+	<li style="width: 300px;"><span class="main"></span><a href="http://localhost:2020/zab/login?menumain.htm">Main Menu</a></li>
+	<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=approvernotification&amp;option=Approver+Notifications&amp;menuname=approvernotification">Approver Notifications</a></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=raon"><span class="bunty">Appointment</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmradiooncologyappheader&amp;option=Doctor+Wise+Investigation+Appointment&amp;menuname=raon">Doctor Wise Investigation Appointment</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmprocedureheader&amp;option=Appointment+with+Charges&amp;menuname=raon">Appointment with Charges</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmmachineappheader&amp;option=Appointment+without+Charge&amp;menuname=raon">Appointment without Charge</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=crd"><span class="bunty">CRD</span></a>
+	<ul>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=crdrept"><span class="bunty">Reports</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+patienttransit%282%3Bin%2Cst%3Bzid%2Cadmno%3Badmissionno%3DAdmission+No%2Cxviewtype%3DReport+View%29&amp;option=Patient+Transit+History&amp;menuname=crdrept">Patient Transit History</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+dailypatientlist%283%3Bin%2Cdt%2Cst%3Bzid%2Cfdate%2Cdoctor%3Bxdate%3DFrom+Date%3D%23date%2Cxdoctor%3DDoctor+ID%2Cxviewtype%3DReport+View%29&amp;option=Daily+Admitted+Patient+List&amp;menuname=crdrept">Daily Admitted Patient List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappdetailopdconspres%286%3Bin%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Cfdept%2Cfdoc%2Cstatus%2Capptype%3Bxdate%3DDate%2Cxdeptnameclinical%3DDepartment%2Cxdoctor%3DDoctor%2Cxapstatus%3DAppointment+Status%2Cxappslottype%3DSlot+Type%2Cxviewtype%3DReport+View%29&amp;option=OPD+App+Detail+Confirm&amp;menuname=crdrept">OPD App Detail Confirm</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+pdpmstperinfo%287%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cin%3Bzid%2Cempcate%2Cempstatus%2Cdesignation%2Csection%2Cdepartment%2Cserviceyear%3Bxempcategory%3DConcern+Name%2Cxempstatus%3DEmployee+Status%2Cxdesignation%3DDesignation%2Cxsection%3DSection+Name%2Cxdeptname%3DDepartment+Name%2Cxnum%3DService+Year%2Cxviewtype%3DReport+View%29&amp;option=Service+Length+Wise+Employee+List&amp;menuname=crdrept">Service Length Wise Employee List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatinetliststatuswise%287%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40episodetype%2C%40wing%2C%40floor%2C%40deptnamep%2C%40staffp%2C%40roomp%3Bxpatientstatus%3D+Episode+Type%2Cxwing%3DWing%2Cxfloor%3DFloor%2Cxdeptnameclinical%3DDepartment+Name%2Cxdoctor%3DDoctor%2Cxroom%3DRoom+No%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=Current+Patient+List+For+IPD+EM+DC&amp;menuname=crdrept">Current Patient List For IPD EM DC</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+regpatientlist%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cuserid%2Cfdate%2Ctdate%3Bxuser%3DUser%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=User+Wise+Registration+Patient+List&amp;menuname=crdrept">User Wise Registration Patient List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappprocedurewithcharges%284%3Bin%2Cdt%2Cst%2Cst%3Bzid%2Cfdate%2Citem%2Cstatus%3Bxdate%3DDate%2Cxproced%3DItem+code%2Cxapstatus%3DAppointment+Status%2Cxviewtype%3DReport+View%29&amp;option=Appointment+with+Charges+Report&amp;menuname=crdrept">Appointment with Charges Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappmachine%284%3Bin%2Cdt%2Cst%2Cst%3Bzid%2Cfdate%2Cfdoc%2Cstatus%3Bxdate%3DDate%2Cxmachine%3DMachine+Code%2Cxapstatus%3DAppointment+Status%2Cxviewtype%3DReport+View%29&amp;option=Appointment+Without+Charges+Details&amp;menuname=crdrept">Appointment Without Charges Details</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpackage%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cxitem%2Cfdate%2Ctdate%3Bxpackageid%3DPackage+ID%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Package+Summary&amp;menuname=crdrept">Package Summary</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+durationofpatstay%284%3Bin%2C+dt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cpatient%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxpatient%3DPatient+Id%2Cxviewtype%3DReport+View%29&amp;option=Duration+of+patient+Stay&amp;menuname=crdrept">Duration of patient Stay</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+ipdsummarydeptwiserpt%282%3Bin%2Cst%3B%40zid%2C%40fdate%3Bxdate%3DDate%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=IPD+Summary+Report+Dept+wise&amp;menuname=crdrept">IPD Summary Report Dept wise</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+ipdpatientcount%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=Inpatient+Count&amp;menuname=crdrept">Inpatient Count</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dialysis"><span class="bunty">Dialysis Appointment</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdialysheader&amp;option=Dialysis+Appointment&amp;menuname=dialysis">Dialysis Appointment</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdialysapp&amp;option=View+Appointment&amp;menuname=dialysis">View Appointment</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmdtdocapp"><span class="bunty">Diet Appointment</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=dietpatientlist&amp;option=Dietitian+Patient+List&amp;menuname=mmdtdocapp">Dietitian Patient List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdtdocapp&amp;option=Diet+Appointments&amp;menuname=mmdtdocapp">Diet Appointments</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdocappfollowup&amp;option=Appointments+Follow+up&amp;menuname=mmdtdocapp">Appointments Follow up</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmdiet"><span class="bunty">Dietetics &amp; Nutrition</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=dietnotification&amp;option=Diet+Notification&amp;menuname=mmdiet">Diet Notification</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdietapprove&amp;option=Diet+Requsition+Approval+list&amp;menuname=mmdiet">Diet Requsition Approval list</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdietextraapprove&amp;option=Extra+Food&amp;menuname=mmdiet">Extra Food</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdietdetail&amp;option=Patient+Details&amp;menuname=mmdiet">Patient Details</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdietward&amp;option=Diet+Entry&amp;menuname=mmdiet">Diet Entry</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmliquidadmdet&amp;option=Liquid+Diet+Entry&amp;menuname=mmdiet">Liquid Diet Entry</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=nutrionalassessform&amp;option=Nutritional+Assessment+Form&amp;menuname=mmdiet">Nutritional Assessment Form</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dietreport"><span class="bunty">Reports</span></a>
+		<ul>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmmealkot%282%3Bin%2Cst%3Bzid%2Ccostitem%3Bxcostitemmeal%3DName+Of+Meal%2Cxviewtype%3DReport+View%29&amp;option=KOT+Summary+Report&amp;menuname=dietreport">KOT Summary Report</a></li>
+		</ul></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dietmaster"><span class="bunty">Codes &amp; Parameter</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmmeal&amp;option=Diet+Menu+Setup+Master&amp;menuname=dietmaster">Diet Menu Setup Master</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmopdmealmeanu&amp;option=OPD+Diet+Menu+Setup&amp;menuname=dietmaster">OPD Diet Menu Setup</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DDiet+Type%29&amp;option=Diet+Type&amp;menuname=dietmaster">Diet Type</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DLiquid+Diet%29&amp;option=Liquid+Diet+Type&amp;menuname=dietmaster">Liquid Diet Type</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DName+of+meal%29&amp;option=Name+of+meal&amp;menuname=dietmaster">Name of meal</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemfood&amp;option=Food+Master&amp;menuname=dietmaster">Food Master</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xotherdiet&amp;option=Others+Diet+Type+Specification&amp;menuname=dietmaster">Others Diet Type Specification</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcurrdiet&amp;option=Current+Diet+Type&amp;menuname=dietmaster">Current Diet Type</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xmealtaktm&amp;option=Meal+Taking+Time+Master&amp;menuname=dietmaster">Meal Taking Time Master</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xdtfoodtype&amp;option=Diet+Food+Type+Master&amp;menuname=dietmaster">Diet Food Type Master</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xopdfoodtype&amp;option=OPD+Diet+Food++Master&amp;menuname=dietmaster">OPD Diet Food  Master</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodesadvice&amp;option=Instruction+Diet&amp;menuname=dietmaster">Instruction Diet</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xthdtcls&amp;option=Excercise+Type&amp;menuname=dietmaster">Excercise Type</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=discharge"><span class="bunty">Discharge</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=tdnotification&amp;option=Notification&amp;menuname=discharge">Notification</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmadmissiondisreq&amp;option=Discharge+Request&amp;menuname=discharge">Discharge Request</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdissummary&amp;option=Discharge+Summary&amp;menuname=discharge">Discharge Summary</a></li>
+	</ul></li>
+	<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=doctorpatientlist&amp;option=Doctors+Patient+List&amp;menuname=doctorpatientlist">Doctors Patient List</a></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmdocapp"><span class="bunty">Doctor Appointment</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=doctorpatientlist&amp;option=Doctors+Patient+List&amp;menuname=mmdocapp">Doctors Patient List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdocapp&amp;option=Appointments&amp;menuname=mmdocapp">Appointments</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdocappfollowup&amp;option=Appointments+Follow+up&amp;menuname=mmdocapp">Appointments Follow up</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+opddatewisedocapp%283%3Bin%2Cst%2Cdt%3Bzid%2Cdoctor%2Cdate%3Bxuser%3DDoctor%2Cxdate%3DDate%2Cxviewtype%3DReport+View%29&amp;option=Search+Doctor+Appointment&amp;menuname=mmdocapp">Search Doctor Appointment</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=refdoctor&amp;option=Refer+Doctor&amp;menuname=mmdocapp">Refer Doctor</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmclinicalnote&amp;option=Clinical+Notes&amp;menuname=mmdocapp">Clinical Notes</a></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=investrept"><span class="bunty">Reports</span></a>
+		<ul>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+allradiology%282%3Bin%2Cst%3Bzid%2Cpatient%3Bxpatient%3DPatient+ID%2Cxviewtype%3DReport+View%29&amp;option=Radiology+Report&amp;menuname=investrept">Radiology Report</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmfoodndbev"><span class="bunty">Food and Beverage</span></a>
+	<ul>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mo"><span class="bunty">Food Production</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmbomheader&amp;option=BOM+Entry&amp;menuname=mo">BOM Entry</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=moheader&amp;option=Production+%26+Processing&amp;menuname=mo">Production &amp; Processing</a></li>
+			<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=moreports"><span class="bunty">Reports</span></a>
+			<ul>
+			</ul></li>
+		</ul></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdietfnb&amp;option=Daily+Delivery+Food+Transaction&amp;menuname=mmfoodndbev">Daily Delivery Food Transaction</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmfnbextraapprove&amp;option=Approved+Extra+Food&amp;menuname=mmfoodndbev">Approved Extra Food</a></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dietreport"><span class="bunty">Reports</span></a>
+		<ul>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmmealkot%282%3Bin%2Cst%3Bzid%2Ccostitem%3Bxcostitemmeal%3DName+Of+Meal%2Cxviewtype%3DReport+View%29&amp;option=KOT+Summary+Report&amp;menuname=dietreport">KOT Summary Report</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=Laundry"><span class="bunty">Laundry</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=molaundryheader&amp;option=Laundry+Requisition&amp;menuname=Laundry">Laundry Requisition</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=molaundry&amp;option=Receive%2FIssue+Laundry+Requisition&amp;menuname=Laundry">Receive/Issue Laundry Requisition</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mkt"><span class="bunty">Marketing</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktnotification&amp;option=Notifications+Board&amp;menuname=mkt">Notifications Board</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktanalysisdatatable&amp;option=Marketing+Analysis&amp;menuname=mkt">Marketing Analysis</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=crmcompany&amp;option=Wish+Form&amp;menuname=mkt">Wish Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktprojasshd&amp;option=Project+Assessment+Form&amp;menuname=mkt">Project Assessment Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktcommtrckr&amp;option=Communication+Tracker&amp;menuname=mkt">Communication Tracker</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktquerytrckr&amp;option=Query%2F+Community+Tracker&amp;menuname=mkt">Query/ Community Tracker</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktmnthplan&amp;option=Monthly+Work+Plan%2F+Expence+Form&amp;menuname=mkt">Monthly Work Plan/ Expence Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktprojectdesc&amp;option=Project+Description+Form&amp;menuname=mkt">Project Description Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktrefbusiness&amp;option=Referred+Business+Form&amp;menuname=mkt">Referred Business Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktinfocenter&amp;option=Information+Center+Form&amp;menuname=mkt">Information Center Form</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mktactivities&amp;option=Activities+Form&amp;menuname=mkt">Activities Form</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mktmaster"><span class="bunty">Codes &amp; Parameters</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DMedia+Subject%29&amp;option=Media+Subject&amp;menuname=mktmaster">Media Subject</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DMedia+Topic%29&amp;option=Media+Topic&amp;menuname=mktmaster">Media Topic</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DMedia+Type%29&amp;option=Media+Type&amp;menuname=mktmaster">Media Type</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DMedia+Source%29&amp;option=Media+Source&amp;menuname=mktmaster">Media Source</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DMedia+Name%29&amp;option=Media+Name&amp;menuname=mktmaster">Media Name</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xtrn%28xtypetrn%3DActivity+Code%29&amp;option=Activity+Code&amp;menuname=mktmaster">Activity Code</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=xcodes%28xtype%3DSource+Info%29&amp;option=Source+Info&amp;menuname=mktmaster">Source Info</a></li>
+		</ul></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mktrpt"><span class="bunty">Reports</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mktprojasshd%284%3Bin%2Cdt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cstatus%3Bxcrdate%3DFrom+Date%2Cxcrdate%3DTo+Date%2Cxprstatus%3DStatus%2Cxviewtype%3DReport+View%29&amp;option=Project+Assessment+Report&amp;menuname=mktrpt">Project Assessment Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mktempinfo%282%3Bin%2Cst%3Bzid%2Cstaff%3Bxstaff%3DDoctors+ID%2Cxviewtype%3DReport+View%29&amp;option=Doctors+Pool+Report+by+ID&amp;menuname=mktrpt">Doctors Pool Report by ID</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mktemprpt%2813%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cdt%2Cdt%2Cst%3Bzid%2Cdept%2Cdesi%2Creli%2Cgendr%2Cblodg%2Cempstatus%2Cemptype%2Csection%2Clocation%2Cfdate%2Ctdate%2Cjobtitle%3Bxdeptname%3DDepartment+Name%2Cxdesignation%3DDesignation%2Cxreligion%3DReligion%2Cxsexrep%3DGendar%2Cxbloodgroup%3DBlood+Group%2Cxempstatus%3DEmployee+Status%2Cxemptype%3DEmployment+Type%2Cxsection%3DSection%2Cxlocation%3DLocation+Name%2Cxdate%3DFrom+Joining+Date%2Cxdate%3DTo+Joining+Date%2Cxjobtitle%3DJob+Title%2Cxviewtype%3DReport+View%29&amp;option=Doctors+Pool+Report&amp;menuname=mktrpt">Doctors Pool Report</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmmedrec"><span class="bunty">Medical Records</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappdetailopdcons%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdept%2Cfdoc%2Cstatus%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment%2Cxdoctor%3DDoctor%3D0%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=OPD+Appointment+Detail&amp;menuname=mmmedrec">OPD Appointment Detail</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+pddoctinfo%2813%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cdt%2Cdt%2Cst%3Bzid%2Cdept%2Cdesi%2Creli%2Cgendr%2Cblodg%2Cempstatus%2Cemptype%2Csection%2Clocation%2Cfdate%2Ctdate%2Cjobtitle%3Bxdeptname%3DDepartment+Name%2Cxdesignation%3DDesignation%2Cxreligion%3DReligion%2Cxsexrep%3DGendar%2Cxbloodgroup%3DBlood+Group%2Cxempstatus%3DEmployee+Status%2Cxemptype%3DEmployment+Type%2Cxsection%3DSection%2Cxlocation%3DLocation+Name%2Cxdate%3DFrom+Joining+Date%2Cxdate%3DTo+Joining+Date%2Cxjobtitle%3DJob+Title%2Cxviewtype%3DReport+View%29&amp;option=Employee+Information+Report&amp;menuname=mmmedrec">Employee Information Report</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+datewisesample%285%3Bin%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40user%2C%40fdate%2C%40tdate%2C%40status%3Bzemail%3DUser+ID%2Cxdate%3DFrom+date%2Cxdate%3DTo+Date%2Cxsamplestatus%3DSample+Status%2Cxviewtype%3DReport+View%29&amp;option=Datewise+Sample+Report&amp;menuname=mmmedrec">Datewise Sample Report</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmopdconsultstat%286%3Bin%2Cst%2Cdt%2Cst%2Cst%2Cst%3Bzid%2Cdept%2Cfdate%2Cfdoc%2Cstatus%2Cuser%3Bxdeptname%3DDepartment%2Cxdate%3DDate%2Cxdoctor%3DDoctor%27s+Name%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Opd+Consultation+Status&amp;menuname=mmmedrec">Opd Consultation Status</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappdeptpatientcon%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdept%2Cfdoc%2Cstatus%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment+Name%2Cxdoctor%3DDoctor%27s+Name%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Appointment+Report&amp;menuname=mmmedrec">Appointment Report</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappmissedlist%286%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdept%2Cfdoc%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment+Name%2Cxdoctor%3DDoctor%27s+Name%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Missed+Appointment+Report&amp;menuname=mmmedrec">Missed Appointment Report</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmroomdetails%286%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%3Bzid%2Croomtype%2Cfloor%2Cwing%2Croom%2Cstatus%3Bxroomtype%3DRoom+Type%2Cxfloor%3DFloor%2Cxwing%3DWing%2Cxroom%3DRoom+No%2Cxaroomstatus%3DRoom+Status%2Cxviewtype%3DReport+View%29&amp;option=Room+Details+Report&amp;menuname=mmmedrec">Room Details Report</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+emconvertpatientlsit%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Emergency+Patient+Convert+List&amp;menuname=mmmedrec">Emergency Patient Convert List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmdaycarepatientconvrtlist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Day+Care+Patient+Convert+List&amp;menuname=mmmedrec">Day Care Patient Convert List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatinetliststatuswise%287%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40episodetype%2C%40wing%2C%40floor%2C%40deptnamep%2C%40staffp%2C%40roomp%3Bxpatientstatus%3D+Episode+Type%2Cxwing%3DWing%2Cxfloor%3DFloor%2Cxdeptnameclinical%3DDepartment+Name%2Cxdoctor%3DDoctor%2Cxroom%3DRoom+No%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=Current+Patient+List+For+IPD+EM+DC&amp;menuname=mmmedrec">Current Patient List For IPD EM DC</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientcontactinfo%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdoc%2Ctdoc%2Cdept%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DFrom+Doctor%2Cxdoctor%3DTo+Doctor%2Cxdeptname%3DDepartment+Name%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Patient+Contact+Info&amp;menuname=mmmedrec">Patient Contact Info</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmopdsum%284%3Bin%2Cst%2Cdt%2Cst%3Bzid%2Cdept%2Cfdate%2Cuser%3Bxdeptname%3DDepartment%2Cxdate%3DDate%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Opd+Appointment+Status+Summary&amp;menuname=mmmedrec">Opd Appointment Status Summary</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmbedoccupancydetailsrpt%283%3Bin%2Cst%2Cst%3B%40zid%2C%40indate%2C%40outdate%3Bxdate%3DIn+Date%2Cxdate%3DOut+Date%3BReport+View%29&amp;option=BED+Occupancy+Details+List&amp;menuname=mmmedrec">BED Occupancy Details List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+bedoccupancyreport%283%3Bin%2Cst%2Cst%3B%40zid%2C%40indate%2C%40outdate%3Bxdate%3DIn+Date%2Cxdate%3DOut+Date%3BReport+View%29&amp;option=Occupancy+Report+Summary&amp;menuname=mmmedrec">Occupancy Report Summary</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmrscreport%284%3Bin%2Cdt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdoctor%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DDoctor%2Cxviewtype%3DReport+View%29&amp;option=Revenue+Sharing+Consulting+Details&amp;menuname=mmmedrec">Revenue Sharing Consulting Details</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmlogbookrpt%282%3Bin%2Cdt%3Bzid%2Cdate%3Bxdate%3DDate%2Cxviewtype%3DReport+View%29&amp;option=Visitor+Logbook+list&amp;menuname=mmmedrec">Visitor Logbook list</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+regpatientlist%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cuserid%2Cfdate%2Ctdate%3Bxuser%3DUser%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Registration+Patient+List&amp;menuname=mmmedrec">Registration Patient List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientemergency%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cepisode%2Cfdate%2Ctdate%3Bxpatientstatus%3D+Episode+Type%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Emergency+Patient+List+3+times&amp;menuname=mmmedrec">Emergency Patient List 3 times</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+ipdpatientloslist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=IPD+Patients+LOS+List&amp;menuname=mmmedrec">IPD Patients LOS List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+Empatientloslist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=EM+Patients+LOS+List&amp;menuname=mmmedrec">EM Patients LOS List</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientemergency2%283%3Bin%2Cdt%2Cdt%3Bzid%2Cfdate%2Ctdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Return+to+Emergency+within+72+hours&amp;menuname=mmmedrec">Return to Emergency within 72 hours</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatienticu%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Return+to+ICU+within+48+hours&amp;menuname=mmmedrec">Return to ICU within 48 hours</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+investigationarea%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Fortnightly+Test+Report&amp;menuname=mmmedrec">Fortnightly Test Report</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+losconsultation%284%3Bin%2Cdt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdoctor%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DDoctor%2Cxviewtype%3DReport+View%29&amp;option=OPD+Consultant+LOS&amp;menuname=mmmedrec">OPD Consultant LOS</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmnurswk"><span class="bunty">Nurse Workbench</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmadmissiondisreq&amp;option=Discharge+Request&amp;menuname=mmnurswk">Discharge Request</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdissummary&amp;option=Discharge+Summary&amp;menuname=mmnurswk">Discharge Summary</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmlabresultnursedatatable&amp;option=Lab+Print&amp;menuname=mmnurswk">Lab Print</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=ot"><span class="bunty">OT</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmotscheduleheader&amp;option=OT+Schedule&amp;menuname=ot">OT Schedule</a></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=otreport"><span class="bunty">Reports</span></a>
+		<ul>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+allotschedulelist%288%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cxdate%2Ctdate%2Cpatient%2Cdept%2Cconsultant%2Cot%2Ctype%3Bxdate%3DFrom+Date%2Cxtdate%3DTo+Date%2Cxpatient%3DPatient+ID%2Cxdeptnameclinical%3DDepartment+Name%2Cxdoctor%3DConsultant%2Cxroom1%3DOT%2Cxtype1%3DPatient+Type%2Cxviewtype%3DReport+View%29&amp;option=OT+Schedule&amp;menuname=otreport">OT Schedule</a></li>
+		</ul></li>
+	</ul></li>
+	<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmlabrptsend&amp;option=Report+Dispatch%28OPD%29&amp;menuname=mmlabrptsend">Report Dispatch(OPD)</a></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=raon"><span class="bunty">Therapy and Procedure Appointment</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmradiooncologyappheader&amp;option=Doctor+Wise+Investigation+Appointment&amp;menuname=raon">Doctor Wise Investigation Appointment</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmprocedureheader&amp;option=Appointment+with+Charges&amp;menuname=raon">Appointment with Charges</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmmachineappheader&amp;option=Appointment+without+Charge&amp;menuname=raon">Appointment without Charge</a></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mo"><span class="bunty">Production</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmbomheader&amp;option=BOM+Entry&amp;menuname=mo">BOM Entry</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=moheader&amp;option=Production+%26+Processing&amp;menuname=mo">Production &amp; Processing</a></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=moreports"><span class="bunty">Reports</span></a>
+		<ul>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=hms"><span class="bunty">HMS</span></a>
+	<ul>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=charges"><span class="bunty">CHARGES</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemamc&amp;option=Ambulance+Charges&amp;menuname=charges">Ambulance Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemac&amp;option=Appointment+Charges&amp;menuname=charges">Appointment Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemcc&amp;option=Catering+Charges&amp;menuname=charges">Catering Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemcvs&amp;option=Consigment-Valve+%26+Stent+Charges&amp;menuname=charges">Consigment-Valve &amp; Stent Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemdnc&amp;option=Dental+Charges&amp;menuname=charges">Dental Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemdietc&amp;option=Dietary+Charges&amp;menuname=charges">Dietary Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemdc&amp;option=Disposable+Item&amp;menuname=charges">Disposable Item</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemdocc&amp;option=Doctors+Charges&amp;menuname=charges">Doctors Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemec&amp;option=Equipment+Charges&amp;menuname=charges">Equipment Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitememc&amp;option=Emergency+Charges&amp;menuname=charges">Emergency Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemesc&amp;option=ENT+Surgery+Charges&amp;menuname=charges">ENT Surgery Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemfc&amp;option=Furniture+Charges&amp;menuname=charges">Furniture Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemgc&amp;option=General+Item&amp;menuname=charges">General Item</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemgsc&amp;option=General+Surgery+Charges&amp;menuname=charges">General Surgery Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemhec&amp;option=Hospital+Equipment+Charges&amp;menuname=charges">Hospital Equipment Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemic&amp;option=Implant+Charges&amp;menuname=charges">Implant Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caiteminc&amp;option=Instrument+Charges&amp;menuname=charges">Instrument Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemlc&amp;option=Laboratory+Charges&amp;menuname=charges">Laboratory Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemnmc&amp;option=Nuclear+Medicine+Charges&amp;menuname=charges">Nuclear Medicine Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemnc&amp;option=Nursing+Charges&amp;menuname=charges">Nursing Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemotc&amp;option=OT+Charges&amp;menuname=charges">OT Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitempack&amp;option=Package+Charges&amp;menuname=charges">Package Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitempc&amp;option=Pharmacy+Charges&amp;menuname=charges">Pharmacy Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemphyc&amp;option=Physiotherapy+Charges&amp;menuname=charges">Physiotherapy Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitempcp&amp;option=Plastic+%26+Cosmetic+Procedure+Charges&amp;menuname=charges">Plastic &amp; Cosmetic Procedure Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemps&amp;option=Plastic+Surgery&amp;menuname=charges">Plastic Surgery</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitempsc&amp;option=Printing+and+Stationary+Charges&amp;menuname=charges">Printing and Stationary Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitempdc&amp;option=Procedure+Charges&amp;menuname=charges">Procedure Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemreg&amp;option=Registration+Charges&amp;menuname=charges">Registration Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemroom&amp;option=Room+Charges&amp;menuname=charges">Room Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemrc&amp;option=Radiology+Charges&amp;menuname=charges">Radiology Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemsts&amp;option=Speech+Therapy+Charges&amp;menuname=charges">Speech Therapy Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemsc&amp;option=Suture+Charges&amp;menuname=charges">Suture Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemup&amp;option=Urology+Procedure&amp;menuname=charges">Urology Procedure</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemusc&amp;option=Urology+Surgery+Charges&amp;menuname=charges">Urology Surgery Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemvsc&amp;option=Vasculer+Surgery+Charges&amp;menuname=charges">Vasculer Surgery Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caitemsvc&amp;option=Stent+And+Valve+Charges&amp;menuname=charges">Stent And Valve Charges</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="javascript:run1()&amp;menuname=charges">---------------</a></li>
+			<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=hmsreports"><span class="bunty">Reports</span></a>
+			<ul>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*crystal+mmpatient%28xpatient%3DFrom+Patient%2Cxpatient%3DTo+Patient%29&amp;option=Patient+Information&amp;menuname=hmsreports">Patient Information</a></li>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*bocrystal+757%28xdate%3DFrom+date%2Cxdate%3DTo+date%2Cxstaff%3DFrom+Consultant%2Cxstaff%3DTo+Consultant%29&amp;option=Admission+List+By+Consultant&amp;menuname=hmsreports">Admission List By Consultant</a></li>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*bocrystal+2191%28xdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DFrom+Consultant%2Cxdoctor%3DTo+Consultant%2CxDepartmentrptcln%3DFrom+Department%2CxDepartmentrptcln%3DTo+Department%2Cxroomtype%3DRoom+Type%2Cxroomtype%3DRoom+Type%2Cxfloor%3DFloor%2Cxfloor%3D+Floor%2Cxadmstatus%3DStatus%29&amp;option=Patient+List+By+Status&amp;menuname=hmsreports">Patient List By Status</a></li>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+supplierlist%283%3Bin%2Cst%2Cst%3Bzid%2Cgsup%2Csupcat%3Bxgsup%3DSupplier+Group%2Cxsupcat%3DSupplier+Category%2Cxviewtype%3DReport+View%29&amp;option=Supplier+List&amp;menuname=hmsreports">Supplier List</a></li>
+				<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+caitem%283%3Bin%2Cst%2Cst%3Bzid%2Cgitem%2Ccatitem%3Bxgitem%3DItem+Group%2Cxcatitem%3DItem+Category%2Cxviewtype%3DReport+View%29&amp;option=Product+List&amp;menuname=hmsreports">Product List</a></li>
+			</ul></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=forms"><span class="bunty">Forms</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bloodreqform&amp;option=Blood+Requsition+Form&amp;menuname=forms">Blood Requsition Form</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=preopnursingcareplan&amp;option=Pre+Nursing+Care+Plan+and+Record&amp;menuname=forms">Pre Nursing Care Plan and Record</a></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=ot"><span class="bunty">OT</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmotscheduleheader&amp;option=OT+Schedule&amp;menuname=ot">OT Schedule</a></li>
+			<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=otreport"><span class="bunty">Reports</span></a>
+			<ul>
+				<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+allotschedulelist%288%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cxdate%2Ctdate%2Cpatient%2Cdept%2Cconsultant%2Cot%2Ctype%3Bxdate%3DFrom+Date%2Cxtdate%3DTo+Date%2Cxpatient%3DPatient+ID%2Cxdeptnameclinical%3DDepartment+Name%2Cxdoctor%3DConsultant%2Cxroom1%3DOT%2Cxtype1%3DPatient+Type%2Cxviewtype%3DReport+View%29&amp;option=OT+Schedule&amp;menuname=otreport">OT Schedule</a></li>
+			</ul></li>
+		</ul></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmbomheader&amp;option=BOM+Master&amp;menuname=hms">BOM Master</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmmedrec"><span class="bunty">Medical Records</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappdetailopdcons%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdept%2Cfdoc%2Cstatus%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment%2Cxdoctor%3DDoctor%3D0%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=OPD+Appointment+Detail&amp;menuname=mmmedrec">OPD Appointment Detail</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+pddoctinfo%2813%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%2Cdt%2Cdt%2Cst%3Bzid%2Cdept%2Cdesi%2Creli%2Cgendr%2Cblodg%2Cempstatus%2Cemptype%2Csection%2Clocation%2Cfdate%2Ctdate%2Cjobtitle%3Bxdeptname%3DDepartment+Name%2Cxdesignation%3DDesignation%2Cxreligion%3DReligion%2Cxsexrep%3DGendar%2Cxbloodgroup%3DBlood+Group%2Cxempstatus%3DEmployee+Status%2Cxemptype%3DEmployment+Type%2Cxsection%3DSection%2Cxlocation%3DLocation+Name%2Cxdate%3DFrom+Joining+Date%2Cxdate%3DTo+Joining+Date%2Cxjobtitle%3DJob+Title%2Cxviewtype%3DReport+View%29&amp;option=Employee+Information+Report&amp;menuname=mmmedrec">Employee Information Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+datewisesample%285%3Bin%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40user%2C%40fdate%2C%40tdate%2C%40status%3Bzemail%3DUser+ID%2Cxdate%3DFrom+date%2Cxdate%3DTo+Date%2Cxsamplestatus%3DSample+Status%2Cxviewtype%3DReport+View%29&amp;option=Datewise+Sample+Report&amp;menuname=mmmedrec">Datewise Sample Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmopdconsultstat%286%3Bin%2Cst%2Cdt%2Cst%2Cst%2Cst%3Bzid%2Cdept%2Cfdate%2Cfdoc%2Cstatus%2Cuser%3Bxdeptname%3DDepartment%2Cxdate%3DDate%2Cxdoctor%3DDoctor%27s+Name%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Opd+Consultation+Status&amp;menuname=mmmedrec">Opd Consultation Status</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappdeptpatientcon%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdept%2Cfdoc%2Cstatus%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment+Name%2Cxdoctor%3DDoctor%27s+Name%2Cxapstatus%3DAppointment+Status%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Appointment+Report&amp;menuname=mmmedrec">Appointment Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmappmissedlist%286%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdept%2Cfdoc%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdeptname%3DDepartment+Name%2Cxdoctor%3DDoctor%27s+Name%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Missed+Appointment+Report&amp;menuname=mmmedrec">Missed Appointment Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmroomdetails%286%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%3Bzid%2Croomtype%2Cfloor%2Cwing%2Croom%2Cstatus%3Bxroomtype%3DRoom+Type%2Cxfloor%3DFloor%2Cxwing%3DWing%2Cxroom%3DRoom+No%2Cxaroomstatus%3DRoom+Status%2Cxviewtype%3DReport+View%29&amp;option=Room+Details+Report&amp;menuname=mmmedrec">Room Details Report</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+emconvertpatientlsit%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Emergency+Patient+Convert+List&amp;menuname=mmmedrec">Emergency Patient Convert List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmdaycarepatientconvrtlist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Day+Care+Patient+Convert+List&amp;menuname=mmmedrec">Day Care Patient Convert List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatinetliststatuswise%287%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40episodetype%2C%40wing%2C%40floor%2C%40deptnamep%2C%40staffp%2C%40roomp%3Bxpatientstatus%3D+Episode+Type%2Cxwing%3DWing%2Cxfloor%3DFloor%2Cxdeptnameclinical%3DDepartment+Name%2Cxdoctor%3DDoctor%2Cxroom%3DRoom+No%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=Current+Patient+List+For+IPD+EM+DC&amp;menuname=mmmedrec">Current Patient List For IPD EM DC</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientcontactinfo%287%3Bin%2Cdt%2Cdt%2Cst%2Cst%2Cst%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdoc%2Ctdoc%2Cdept%2Cuser%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DFrom+Doctor%2Cxdoctor%3DTo+Doctor%2Cxdeptname%3DDepartment+Name%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Patient+Contact+Info&amp;menuname=mmmedrec">Patient Contact Info</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmopdsum%284%3Bin%2Cst%2Cdt%2Cst%3Bzid%2Cdept%2Cfdate%2Cuser%3Bxdeptname%3DDepartment%2Cxdate%3DDate%2Cxrepuser%3DUser%3D%23user%2Cxviewtype%3DReport+View%29&amp;option=Opd+Appointment+Status+Summary&amp;menuname=mmmedrec">Opd Appointment Status Summary</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmbedoccupancydetailsrpt%283%3Bin%2Cst%2Cst%3B%40zid%2C%40indate%2C%40outdate%3Bxdate%3DIn+Date%2Cxdate%3DOut+Date%3BReport+View%29&amp;option=BED+Occupancy+Details+List&amp;menuname=mmmedrec">BED Occupancy Details List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+bedoccupancyreport%283%3Bin%2Cst%2Cst%3B%40zid%2C%40indate%2C%40outdate%3Bxdate%3DIn+Date%2Cxdate%3DOut+Date%3BReport+View%29&amp;option=Occupancy+Report+Summary&amp;menuname=mmmedrec">Occupancy Report Summary</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmrscreport%284%3Bin%2Cdt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cfdoctor%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DDoctor%2Cxviewtype%3DReport+View%29&amp;option=Revenue+Sharing+Consulting+Details&amp;menuname=mmmedrec">Revenue Sharing Consulting Details</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmlogbookrpt%282%3Bin%2Cdt%3Bzid%2Cdate%3Bxdate%3DDate%2Cxviewtype%3DReport+View%29&amp;option=Visitor+Logbook+list&amp;menuname=mmmedrec">Visitor Logbook list</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+regpatientlist%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cuserid%2Cfdate%2Ctdate%3Bxuser%3DUser%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Registration+Patient+List&amp;menuname=mmmedrec">Registration Patient List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientemergency%284%3Bin%2Cst%2Cdt%2Cdt%3Bzid%2Cepisode%2Cfdate%2Ctdate%3Bxpatientstatus%3D+Episode+Type%2Cxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Emergency+Patient+List+3+times&amp;menuname=mmmedrec">Emergency Patient List 3 times</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+ipdpatientloslist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=IPD+Patients+LOS+List&amp;menuname=mmmedrec">IPD Patients LOS List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+Empatientloslist%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=EM+Patients+LOS+List&amp;menuname=mmmedrec">EM Patients LOS List</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatientemergency2%283%3Bin%2Cdt%2Cdt%3Bzid%2Cfdate%2Ctdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Return+to+Emergency+within+72+hours&amp;menuname=mmmedrec">Return to Emergency within 72 hours</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+mmpatienticu%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Return+to+ICU+within+48+hours&amp;menuname=mmmedrec">Return to ICU within 48 hours</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+investigationarea%283%3Bin%2Cst%2Cst%3B%40zid%2C%40fdate%2C%40tdate%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxviewtype%3DReport+View%29&amp;option=Fortnightly+Test+Report&amp;menuname=mmmedrec">Fortnightly Test Report</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+losconsultation%284%3Bin%2Cdt%2Cdt%2Cst%3Bzid%2Cfdate%2Ctdate%2Cdoctor%3Bxdate%3DFrom+Date%2Cxdate%3DTo+Date%2Cxdoctor%3DDoctor%2Cxviewtype%3DReport+View%29&amp;option=OPD+Consultant+LOS&amp;menuname=mmmedrec">OPD Consultant LOS</a></li>
+		</ul></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=pddocrsc&amp;option=RSC+Info&amp;menuname=hms">RSC Info</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmpatient&amp;option=Patient+Information&amp;menuname=hms">Patient Information</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=doctorpatientlist&amp;option=Doctors+Patient+List+Notification&amp;menuname=hms">Doctors Patient List Notification</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmgenericmaster&amp;option=Generic+Master&amp;menuname=hms">Generic Master</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdocapp&amp;option=Prescription&amp;menuname=hms">Prescription</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=opd"><span class="bunty">OPD</span></a>
+		<ul>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=em"><span class="bunty">Emergency</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmaeadmission&amp;option=Emergency+Patient+Admission&amp;menuname=em">Emergency Patient Admission</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmempatienttrans&amp;option=Emergency+TO+IPD&amp;menuname=em">Emergency TO IPD</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmemgnursassesment&amp;option=Nursing+Asessment-Emergency+Triage&amp;menuname=em">Nursing Asessment-Emergency Triage</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=pdoutdoctor&amp;option=Out+Doctor+Entry&amp;menuname=em">Out Doctor Entry</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=caroomdetailhk&amp;option=Dirty+Bed+List&amp;menuname=em">Dirty Bed List</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+patientwristband%282%3Bin%2Cst%3Bzid%2Cadmissionno%3Bxadmissionno%3DAdmission+No%2Cxviewtype%3DReport+View%29&amp;option=Patient+Wristband&amp;menuname=em">Patient Wristband</a></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dc"><span class="bunty">Day Care</span></a>
+		<ul>
+		</ul></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=cacuspayer&amp;option=Payer+Information&amp;menuname=hms">Payer Information</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=ipd"><span class="bunty">IPD</span></a>
+		<ul>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+patientwristband%282%3Bin%2Cst%3Bzid%2Cadmissionno%3Bxadmissionno%3DAdmission+No%2Cxviewtype%3DReport+View%29&amp;option=Patient+Wristband&amp;menuname=ipd">Patient Wristband</a></li>
+		</ul></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmadmissionsearch&amp;option=Search+Admitted&amp;menuname=hms">Search Admitted</a></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=dialysis"><span class="bunty">Dialysis Appointment</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdialysheader&amp;option=Dialysis+Appointment&amp;menuname=dialysis">Dialysis Appointment</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdialysapp&amp;option=View+Appointment&amp;menuname=dialysis">View Appointment</a></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=papp"><span class="bunty">Physiotherapy Appointment</span></a>
+		<ul>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmlab"><span class="bunty">Lab</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmlabsamplereject&amp;option=Lab+Reject+%26+Recollect&amp;menuname=mmlab">Lab Reject &amp; Recollect</a></li>
+			<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmlabrpt"><span class="bunty">Report</span></a>
+			<ul>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+datewisesample%285%3Bin%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40user%2C%40fdate%2C%40tdate%2C%40status%3Bzemail%3DUser+ID%2Cxdate%3DFrom+date%2Cxdate%3DTo+Date%2Cxsamplestatus%3DSample+Status%2Cxviewtype%3DReport+View%29&amp;option=Datewise+Sample+Report&amp;menuname=mmlabrpt">Datewise Sample Report</a></li>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+labstatussummary%283%3Bin%2Cst%2Cst%2Cst%3B+%40zid%2C%40date%2C%40catitem%3B+xdate+%3D+Date+%2C+xcatitemlab%3D+Lab+Test+Category%29&amp;option=Lab+Status+Summary+Report&amp;menuname=mmlabrpt">Lab Status Summary Report</a></li>
+				<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*viewcrystal+testtasks%287%3Bin%2Cst%2Cst%2Cst%2Cst%2Cst%2Cst%3B%40zid%2C%40catitem%2C%40xpatient%2C%40fdate%2C%40tdate%2C%40status%2C%40test%3B+xcatitemlab%3D+Lab+Test+Category%2C+xpatient%3D+Patient+ID%2Cxdate+%3D+From+Date%2C+xdate%3D+To+Date%2Cxlabrept%3DStatus%2Cxitemlcrpt%3DTest+Code%2Cxviewtype%3DReport+View%3Bzremip%3Dhttp%3A%2F%2F172.16.0.49%3A944%2Fzab%2F%29&amp;option=Lab+Test+Tasks+Report&amp;menuname=mmlabrpt">Lab Test Tasks Report</a></li>
+			</ul></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmlabresultaprovedatatable&amp;option=Lab+Approved+Update&amp;menuname=mmlab">Lab Approved Update</a></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=mmradiology"><span class="bunty">Radiology</span></a>
+		<ul>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=discharge"><span class="bunty">Discharge</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=tdnotification&amp;option=Notification&amp;menuname=discharge">Notification</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmadmissiondisreq&amp;option=Discharge+Request&amp;menuname=discharge">Discharge Request</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=mmdissummary&amp;option=Discharge+Summary&amp;menuname=discharge">Discharge Summary</a></li>
+		</ul></li>
+		<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=bm"><span class="bunty">BME</span></a>
+		<ul>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmmachinemst&amp;option=Machine+Register&amp;menuname=bm">Machine Register</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmmachinemstview&amp;option=Machine+Search&amp;menuname=bm">Machine Search</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnservicereq&amp;option=Service+Request&amp;menuname=bm">Service Request</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnservicelog&amp;option=Service+Log&amp;menuname=bm">Service Log</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnpmcalender&amp;option=PM+Calender&amp;menuname=bm">PM Calender</a></li>
+			<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnpmschedule&amp;option=PM+Schedule&amp;menuname=bm">PM Schedule</a></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmto&amp;option=Transfer&amp;menuname=bm">Transfer</a></li>
+		</ul></li>
+		<li class="folder-group last" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=pharma"><span class="bunty">Pharmachy</span></a>
+		<ul>
+			<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=imtransfer"><span class="bunty">Transfer Transaction</span></a>
+			<ul>
+				<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=imtorheadertransfer&amp;option=Transfer+Order+Entry&amp;menuname=imtransfer">Transfer Order Entry</a></li>
+				<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=imtransfer&amp;option=Transfer+%26+Receive+Confirmation&amp;menuname=imtransfer">Transfer &amp; Receive Confirmation</a></li>
+			</ul></li>
+			<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=opipdgenericstock&amp;option=Generic+Name+Wise+Stock&amp;menuname=pharma">Generic Name Wise Stock</a></li>
+		</ul></li>
+	</ul></li>
+	<li class="folder-group" style="width: 300px;"><span class="plus"></span><span class="folder"></span><a href="javascript:run1()&amp;menuname=bm"><span class="bunty">BME</span></a>
+	<ul>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmmachinemst&amp;option=Machine+Register&amp;menuname=bm">Machine Register</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmmachinemstview&amp;option=Machine+Search&amp;menuname=bm">Machine Search</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnservicereq&amp;option=Service+Request&amp;menuname=bm">Service Request</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnservicelog&amp;option=Service+Log&amp;menuname=bm">Service Log</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnpmcalender&amp;option=PM+Calender&amp;menuname=bm">PM Calender</a></li>
+		<li style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmtrnpmschedule&amp;option=PM+Schedule&amp;menuname=bm">PM Schedule</a></li>
+		<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=bmto&amp;option=Transfer&amp;menuname=bm">Transfer</a></li>
+	</ul></li>
+	<li class="join-last" style="width: 300px;"><span class="join"></span><span class="page"></span><a href="http://localhost:2020/zab/login?screen=*zabscreenwelcome&amp;option=welcome&amp;menuname=*zabscreenwelcome">welcome</a></li>
+</ul>
+</div>
+</div>
+<div class="topnav"> 
+		<ul>
+			<li><a onclick="showblist();" href="http://localhost:2020/zab/login#" title="Change Business"><i class="fas fa-list-alt fa-2x"></i></a></li>
+			<li><a href="http://localhost:2020/zab/login?screen=xuserspass&amp;option=Change+Password&amp;menuname=main" title="Change Password"><i class="fas fa-unlock-alt fa-2x"></i></a></li>
+			<li><a href="http://localhost:2020/zab/login?menumain.htm" title="Home"><i class="fas fa-home fa-2x"></i></a></li>
+		</ul>
+		<div class="topnav-right">
+		<ul class="navbar-nav float-right">
+			<li><a href="http://localhost:2020/zab/login?screen=*logout&amp;option=Log+Out" title="Log Out"><i class="fas fa-sign-out-alt fa-2x"></i></a></li>
+		</ul>
+		</div>
+</div>
+<div id="blistholder">
+	<div class="row mb-1">
+		<div class="col-lg ml-1">
+			<ul id="css3menu1" class="topmenu">
+				<li class="topmenu"><a href="http://localhost:2020/zab/login?id=400010" style="width:350px;" title="United Hospital Limited."><img src="./salesdashboard._files/400010.png" width="60" hight="10" alt="">United Hospital Limited.</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<table id="mainscrtable" border="0" align="center" width="100%" cellspacing="0" cellpadding="0">
+<tbody><tr>
+	<td align="right" colspan="2"><span class="logh">User ID: 10585 Of United Hospital Limited.&nbsp;&nbsp;Branch: 0101 - </span></td>
+</tr>
+<tr>
+	<td align="left" colspan="2">
+<script type="text/javascript">var head1= document.getElementsByTagName('head')[0];var script1= document.createElement('script');script1.type= 'text/javascript';script1.src= 'https://code.highcharts.com/modules/data.js';head1.appendChild(script1);var head2= document.getElementsByTagName('head')[0];var script2= document.createElement('script');script2.type= 'text/javascript';script2.src= 'http://code.highcharts.com/highcharts.js';head1.appendChild(script2);var head3= document.getElementsByTagName('head')[0];var script3= document.createElement('script');script3.type= 'text/javascript';script3.src= 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js';head1.appendChild(script3);  var link = document.createElement("link"); link.setAttribute("rel","stylesheet");link.setAttribute("href","/zab/homestytle.css"); var head = document.getElementsByTagName("head")[0]; head.appendChild(link);var link2 = document.createElement("link");link2.setAttribute("rel","stylesheet");link2.setAttribute("href","/zab/animate.min.css"); var head2 = document.getElementsByTagName("head")[0]; head2.appendChild(link2);</script>    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">         <!-- Navbar Brand-->         <a class="navbar-brand ps-3" href="http://localhost:2020/zab/login">DASHBOARD</a>         <!-- Sidebar Toggle-->         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>         <!-- Navbar Search-->     </nav>     <div id="layoutSidenav">         <div id="layoutSidenav_nav">             <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">                 <div class="sb-sidenav-menu">                     <div class="nav" style="background: none !important;">                         <div class="sb-sidenav-menu-heading">                                <br>Dr. Jahangir  Kabir</div>                      <a class="nav-link" onclick="home()">                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>                           Sales Dashboard                      </a>            	</div></div></nav>         </div>         <div id="layoutSidenav_content">             <main id="main-section">                <div class="container-fluid px-4">                     <div class="row">                         <div class="col-xl-4 col-md-6">                             <div class="card text-white mb-4 one">                                 <h4 class="card-body"><i class="fas fa-user-friends"></i> Today's No. Of Sale</h4>                                 <h3 class="card-number pulse">3</h3>                             </div>                         </div>                         <div class="col-xl-4 col-md-6">                             <div class="card text-white mb-4 two">                                 <h4 class="card-body"><i class="fas fa-user-friends"></i> Today's Order</h4>                                 <span class="card-number">3</span>                             </div>                         </div>                         <div class="col-xl-4 col-md-6">                             <div class="card text-white mb-4 three">                                 <h4 class="card-body"><i class="fas fa-user-friends"></i> This Month's Sale</h4>                                 <span class="card-number">35</span>                             </div>                         </div>                     	</div>                 </div>    <div class="row">    <div class="col-sm-6"><div id="mydiv" class="chart-container" style="position: relative;width:40vw"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+<canvas id="myChart" width="544" height="306" style="display: block; width: 816px; height: 459px;" class="chartjs-render-monitor"></canvas>
+</div></div><div class="col-sm-6"><div id="mydiv" class="chart-container" style="position: relative;width:40vw"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+<canvas id="barcard2" width="544" height="306" class="chartjs-render-monitor" style="display: block; width: 816px; height: 459px;"></canvas>
+</div></div><div class="col-sm-6"><div id="mydiv" class="chart-container" style="position: relative;width:40vw"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+<canvas id="CVSC" width="544" height="306" class="chartjs-render-monitor" style="display: block; width: 816px; height: 459px;"></canvas>
+</div></div>    <div></div></div></main><div id="demo"></div><div id="admissiondemo"></div><div id="patientlist"></div><div id="otschedule"></div><div class="container patienthistory"><div class="modal fade" id="patientdetail" role="dialog"><div class="modal-dialog modal-xl"><div class="modal-content patienthistory"><div class="modal-header"><h4 class="modal-title">Patient Profile</h4><button type="button" class="close" data-dismiss="modal">×</button></div><div class="modal-body patienthistory-modalbody"><div id="patienthistory"></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="container patienthistory"><div class="modal fade" id="radiology" role="dialog"><div class="modal-dialog modal-xl"><div class="modal-content patienthistory"><div class="modal-header"><h4 class="modal-title">Radiology Result</h4><button type="button" class="close" data-dismiss="modal">×</button></div><div class="modal-body patienthistory-modalbody"><div id="radiologyresult"></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="container patienthistory"><div class="modal fade" id="labresultmodal" role="dialog"><div class="modal-dialog modal-xl"><div class="modal-content patienthistory"><div class="modal-header"><h4 class="modal-title">LAB Result</h4><button type="button" class="close" data-dismiss="modal">×</button></div><div class="modal-body patienthistory-modalbody"><div id="labresultview"></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="container patienthistory"><div class="modal fade" id="patientvitalsmodal" role="dialog"><div class="modal-dialog modal-xl"><div class="modal-content patienthistory"><div class="modal-header"><h4 class="modal-title">Patient Vitals Result</h4><button type="button" class="close" data-dismiss="modal">×</button></div><div class="modal-body patienthistory-modalbody"><div id="patientvital"></div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div></div><script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['February'],
+        datasets: [{
+            label: 'Monthly sales',
+            data: [35],
+            backgroundColor: [
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});</script><script type="text/javascript" charset="utf-8">$(function () { $("[data-toggle = 'tooltip']").tooltip(); });new Chart(document.getElementById('barcard2'), {type: 'pie',data: {labels:['CHITTAGONG','DHAKA','KHULNA',],datasets: [{label: "Sales",				backgroundColor: [
+					window.chartColors.red,
+					window.chartColors.orange,
+					window.chartColors.yellow,
+					window.chartColors.green,
+					window.chartColors.blue,
+					window.chartColors.black,
+				],
+borderColor: window.chartColors.green,data:[9,60,29,],fill: false,borderWidth: 1}]},options: {plugins: {datalabels: {align: 'end',anchor: 'end',color: function(context) {return context.dataset.backgroundColor;},font: function(context) {var w = context.chart.width;return { size: w < 512 ? 10 : 10,weight: 'bold',};},formatter: function(value, context) {return context.chart.data[context.dataIndex];}}},legend: { display: true },title: {display: true,font: { family: 'FontAwesome',size: 10},text: 'Territory Wise Sales'},padding :6,scales: {} }});</script><script type="text/javascript" charset="utf-8">$(function () { $("[data-toggle = 'tooltip']").tooltip(); });new Chart(document.getElementById('CVSC'), {type: 'bar',data: {labels:['1','2',],datasets: [{label: "Cash Sales",padding :4,				backgroundColor: [
+					window.chartColors.blue,
+					window.chartColors.blue,
+				],
+borderColor: window.chartColors.green,data:[28500.00,396066.64,]},{label: 'Credit Sales',padding :4,				backgroundColor: [
+					window.chartColors.red,
+					window.chartColors.red,
+				],
+data:[184648.54,88405.00,]},]},options: {plugins: {datalabels: {align: 'end',anchor: 'end',color: function(context) {return context.dataset.backgroundColor;},font: function(context) {var w = context.chart.width;return { size: w < 512 ? 10 : 10,weight: 'bold',};},formatter: function(value, context) {return context.chart.data[context.dataIndex];}}},legend: { display: true ,padding: 60 },title: {display: true,font: { family: 'FontAwesome',size: 10},text: 'This Month VS Previous Month Cash and Credit Sales'},scales: {xAxes: [{ticks: {fontSize: 10},display: false,pointLabels: {fontFamily: '"Font Awesome 5 Free"',},scaleLabel: {display: true,labelString: 'Month'}}],yAxes: [{ticks: {fontSize: 10},scaleLabel: {display: true,labelString: 'BDT Amount (Taka)'},}]} }});</script>
+
+
+<title>ZAB ERP</title>
+
+
+
+<div id="bar"><span style="position:relative;top:70px; width:100%;height:100%; align:center;">
+
+<!--<img src="images\ugbackpic.png"></span></div> -->
+<!--<img src="images\corona-awarness-v2.png" height="620" width="566"></span></div>-->
+<!--<img src="images\corona-awarness-v2.1.png" height="620"></span></div> -->
+<!--<img src="images\LogoWallpapaperOrange.jpeg" height="80%" width="80%"></span></div>-->
+
+
+
+ 
+
+
+
+	</span></div></div></td></tr>
+</tbody></table><!--end mainscrtable-->
+<script src="./salesdashboard._files/zaberp-script.js.download"></script>
+
+ 
+</body></html>
